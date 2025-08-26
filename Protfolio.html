@@ -1,40 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Macha Sukumar - Portfolio</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; text-align: center; }
-        header { background: #333; color: #fff; padding: 20px; font-size: 24px; position: fixed; width: 100%; top: 0; left: 0; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); }
-        nav { margin-top: 60px; }
-        nav a { color: white; text-decoration: none; margin: 0 15px; font-size: 18px; }
-        nav a:hover { text-decoration: underline; }
-        section { margin: 80px auto; padding: 20px; max-width: 800px; background: #fff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); }
-        h2 { color: #333; }
-        p { font-size: 18px; }
-        .contact { font-weight: bold; color: #007BFF; text-decoration: none; }
-        .contact:hover { text-decoration: underline; }
-        footer { background: #333; color: white; padding: 10px; position: fixed; bottom: 0; width: 100%; font-size: 14px; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sukumar Macha - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Macha Sukumar</h1>
-        <p>Web Developer</p>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#education">Education</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I am <strong>Macha Sukumar</strong>, a passionate Web Developer. I have completed my graduation and specialize in building modern, responsive websites.</p>
-    </section>
+  <!-- NAV -->
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#internship">Internship</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
+  <!-- HERO -->
+  <header>
+    <img src="your-image.jpg" alt="Sukumar Macha">
+    <h1>Sukumar Macha</h1>
+    <p>Artificial Intelligence & Machine Learning Student</p>
+    <div id="typing"></div>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="glass">
+      <p>
+        I am an enthusiastic student pursuing B.Tech in Artificial Intelligence & Machine Learning 
+        (expected 2027) at Trinity College of Engineering and Technology. Currently interning at CodeUnnati 
+        with SAP & TASK, I love building AI-driven projects, solving real-world challenges, and exploring 
+        new technologies.
+      </p>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <h2>Education</h2>
+    <div class="glass">
+      <p><strong>Trinity College of Engineering and Technology</strong><br>
+      B.Tech in Artificial Intelligence & Machine Learning (2023 – 2027)</p>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="glass skill-card">Java</div>
+      <div class="glass skill-card">Python</div>
+      <div class="glass skill-card">C</div>
+      <div class="glass skill-card">HTML</div>
+      <div class="glass skill-card">JavaScript</div>
+      <div class="glass skill-card">SQL</div>
+    </div>
+  </section>
+
+  <!-- INTERNSHIP -->
+  <section id="internship">
+    <h2>Internship</h2>
+    <div class="glass">
+      <p><strong>CodeUnnati (SAP & TASK Collaboration)</strong><br>
+      Working on Machine Learning models, handling datasets, and building AI-powered applications.</p>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li class="glass"><strong>Portfolio Generator Model</strong> – ML model that generates personalized portfolios automatically.</li>
+    </ul>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="glass">
+      <p>Email: <a href="mailto:sukumar9618@gmail.com">sukumar9618@gmail.com</a></p>
+      <p>GitHub: <a href="#">Add your GitHub link here</a></p>
+      <a href="#" class="btn">Download Resume</a>
+      <div class="socials">
+        <a href="#">🌐</a>
+        <a href="#">🐱</a>
+        <a href="#">💼</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Sukumar Macha | Crafted with ❤️</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
     <section id="education">
         <h2>Education</h2>
         <p>I have successfully completed my graduation.</p>
