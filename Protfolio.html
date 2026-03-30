@@ -3,123 +3,101 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sukumar Macha - Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Sukumar Macha | Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- NAV -->
-  <nav>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#internship">Internship</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+<!-- NAV -->
+<nav>
+  <h2>Sukumar</h2>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
-  <!-- HERO -->
-  <header>
-    <img src="file_00000000d9a07209b165fdd36df93a8e.jpg" alt="Sukumar Macha">
+<!-- HERO -->
+<header>
+  <div class="hero">
+
+    <img src="./file_00000000d9a07209b165fdd36df93a8e.png" alt="Sukumar">
+
     <h1>Sukumar Macha</h1>
-    <p>Artificial Intelligence & Machine Learning Student</p>
-    <div id="typing"></div>
-  </header>
+    <h2 id="typing"></h2>
 
-  <!-- ABOUT -->
-  <section id="about">
-    <h2>About Me</h2>
-    <div class="glass">
-      <p>
-        I am an enthusiastic student pursuing B.Tech in Artificial Intelligence & Machine Learning 
-        (expected 2027) at Trinity College of Engineering and Technology. Currently interning at CodeUnnati 
-        with SAP & TASK, I love building AI-driven projects, solving real-world challenges, and exploring 
-        new technologies.
-      </p>
+    <p>Aspiring AI/ML Engineer building intelligent systems.</p>
+
+    <div class="buttons">
+      <a href="#projects" class="btn">View Projects</a>
+      <a href="resume.pdf" class="btn outline" download>Download Resume</a>
     </div>
-  </section>
 
-  <!-- EDUCATION -->
-  <section id="education">
-    <h2>Education</h2>
-    <div class="glass">
-      <p><strong>Trinity College of Engineering and Technology</strong><br>
-      B.Tech in Artificial Intelligence & Machine Learning (2023 – 2027)</p>
-    </div>
-  </section>
+  </div>
+</header>
 
-  <!-- SKILLS -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="skills">
-      <div class="glass skill-card">Java</div>
-      <div class="glass skill-card">Python</div>
-      <div class="glass skill-card">C</div>
-      <div class="glass skill-card">HTML</div>
-      <div class="glass skill-card">JavaScript</div>
-      <div class="glass skill-card">SQL</div>
-    </div>
-  </section>
+<!-- ABOUT -->
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    I am a B.Tech student specializing in Artificial 
+    Intelligence and Machine Learning at Trinity College of Engineering and Technology (2023–2027). I have a strong interest in building intelligent systems using Python and modern web technologies. I am passionate about solving real-world problems and continuously improving my technical skills.
+  </p>
+</section>
 
-  <!-- INTERNSHIP -->
-  <section id="internship">
-    <h2>Internship</h2>
-    <div class="glass">
-      <p><strong>CodeUnnati (SAP & TASK Collaboration)</strong><br>
-      Working on Machine Learning models, handling datasets, and building AI-powered applications.</p>
-    </div>
-  </section>
+<!-- SKILLS -->
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <div>Python</div>
+    <div>MySQL</div>
+    <div>Java</div>
+    <div>HTML</div>
+    <div>JavaScript</div>
+    <div>CSS</div>
+  </div>
+</section>
 
-  <!-- PROJECTS -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li class="glass"><strong>Portfolio Generator Model</strong> – ML model that generates personalized portfolios automatically.</li>
-    </ul>
-  </section>
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>Projects</h2>
 
-  <!-- CONTACT -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <div class="glass">
-      <p>Email: <a href="mailto:sukumar9618@gmail.com">sukumar9618@gmail.com</a></p>
-      <p>GitHub: <a href="https://github.com/Sukumar96-tech">https://github.com/Sukumar96-tech</a></p>
-      <a href="#" class="btn">Download Resume</a>
-      <div class="socials">
-        <a href="#">🌐</a>
-        <a href="#">🐱</a>
-        <a href="#">💼</a>
+  <div class="projects-container">
+
+    <div class="card">
+      <h3>EDUPULSE_AI</h3>
+      <p>EduPulse AI is an intelligent education platform that uses artificial intelligence to analyze student performance and provide personalized learning recommendations.</p>
+      <div class="links">
+        
       </div>
     </div>
-  </section>
+    <div class="card">
+      <h3>SKIN DISEASE DETECTION</h3>
+      <p>A machine learning model for detecting skin diseases from images.</p>
+      <div class="links">
+        
+      </div>
+    </div>
+    
+  </div>
+</section>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2025 Sukumar Macha | Crafted with ❤️</p>
-  </footer>
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact</h2>
+  <p>
+    <a href="mailto:sukumar9618@gmail.com">Email</a> |
+    <a href="https://github.com/Sukumar96-tech">GitHub</a> |
+    <a href="https://www.linkedin.com/in/sukumar-macha-128441362?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a>
+  </p>
+</section>
 
-  <script src="script.js"></script>
-</body>
-</html>
-    <section id="education">
-        <h2>Education</h2>
-        <p>I have successfully completed my graduation.</p>
-    </section>
+<footer>
+  <p>© 2026 Sukumar Macha</p>
+</footer>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <p>Coming Soon...</p>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a class="contact" href="mailto:sukumar9618@gmail.com">sukumar9618@gmail.com</a></p>
-    </section>
-
-    <footer>
-        &copy; 2025 Macha Sukumar | All Rights Reserved
-    </footer>
+<script src="./script.js"></script>
 </body>
 </html>
