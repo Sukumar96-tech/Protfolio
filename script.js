@@ -1,37 +1,27 @@
-// Scroll reveal
-const sections = document.querySelectorAll("section");
-const reveal = () => {
-  const trigger = window.innerHeight * 0.8;
-  sections.forEach(sec => {
-    const top = sec.getBoundingClientRect().top;
-    if (top < trigger) sec.classList.add("visible");
-  });
-};
-window.addEventListener("scroll", reveal);
-reveal();
-
-// Typing effect
-const typingText = ["AI & ML Student", "Developer", "Innovator"];
-let index = 0, char = 0;
+const roles = ["AI/ML Engineer", "Python Developer", "Web Developer"];
+let i = 0, j = 0;
+let text = "";
+let deleting = false;
 
 function type() {
-  if (char < typingText[index].length) {
-    document.getElementById("typing").innerHTML += typingText[index].charAt(char);
-    char++;
-    setTimeout(type, 100);
-  } else {
-    setTimeout(erase, 1500);
-  }
-}
+  if (i < roles.length) {
+    if (!deleting && j <= roles[i].length) {
+      text = roles[i].substring(0, j++);
+    } else if (deleting && j >= 0) {
+      text = roles[i].substring(0, j--);
+    }
 
-function erase() {
-  if (char > 0) {
-    document.getElementById("typing").innerHTML = typingText[index].substring(0, char-1);
-    char--;
-    setTimeout(erase, 50);
+    document.getElementById("typing").innerHTML = text;
+
+    if (j === roles[i].length) deleting = true;
+    if (j === 0) {
+      deleting = false;
+      i++;
+    }
+
+    setTimeout(type, deleting ? 50 : 100);
   } else {
-    index = (index+1) % typingText.length;
-    setTimeout(type, 500);
+    i = 0;
   }
 }
 
