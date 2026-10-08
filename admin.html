@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#101211"><title>Portfolio editor — Sukumar Macha</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <main class="shell">
+    <a class="back" href="index.html">← Back to portfolio</a>
+    <section id="login" class="panel login-panel">
+      <p class="eyebrow">PRIVATE WORKSPACE · LOCAL EDITION</p><h1 id="login-title">Welcome back.</h1>
+      <p class="muted" id="login-description">Sign in to edit your portfolio on this browser.</p>
+      <form id="login-form"><label>Username<input id="username" autocomplete="username" required></label><label>Password<input id="password" type="password" autocomplete="current-password" minlength="10" required></label><button class="button" id="login-submit" type="submit">Sign in <span>↗</span></button><p id="login-error" class="error" aria-live="polite"></p></form>
+      <p class="notice">Your login and portfolio edits stay in this browser. This static editor does not provide secure online authentication or syncing.</p>
+    </section>
+    <section id="editor" hidden>
+      <header class="editor-head"><div><p class="eyebrow">PORTFOLIO CONTROL ROOM</p><h1>Make it yours.</h1><p class="muted">Changes appear in this browser only. Export a backup when you’re done.</p></div><button id="logout" class="quiet">Sign out</button></header>
+      <div class="toolbar"><button id="add-project" class="button">+ Add project</button><button id="add-skill" class="button secondary">+ Add skill</button><button id="export" class="quiet">Export backup ↓</button><label class="import-button">Import backup ↑<input id="import" type="file" accept="application/json" hidden></label></div>
+      <section class="panel content-panel"><div class="panel-heading"><div><p class="eyebrow">01 / PORTFOLIO CONTENT</p><h2>Profile, education & contact</h2></div><span class="count">Saved to this browser</span></div><div id="content-list" class="content-sections"></div></section>
+      <div class="editor-grid"><section class="panel"><div class="panel-heading"><div><p class="eyebrow">02 / SELECTED WORK</p><h2>Projects</h2></div><span id="project-count" class="count"></span></div><div id="projects-list" class="items"></div></section>
+      <section class="panel"><div class="panel-heading"><div><p class="eyebrow">02 / TOOLKIT</p><h2>Skills</h2></div><span id="skill-count" class="count"></span></div><div id="skills-list" class="items"></div></section></div>
+      <section class="panel credentials"><div class="panel-heading"><div><p class="eyebrow">03 / ACCESS</p><h2>Change editor login</h2></div></div><form id="credentials-form" class="credential-form"><label>New username<input id="new-username" autocomplete="username" required></label><label>New password<input id="new-password" type="password" autocomplete="new-password" minlength="10" required></label><button class="button" type="submit">Save login</button></form><p class="notice">Saved in this browser only. This is a convenience lock, not secure authentication for a public site.</p></section>
+      <p id="save-state" class="save-state" aria-live="polite">Saved locally in this browser</p>
+    </section>
+  </main><script src="portfolio-data.js"></script><script src="admin.js"></script>
+</body></html>

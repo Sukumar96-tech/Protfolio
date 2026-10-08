@@ -3,11 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Software Developer</title>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <title>Sukumar Macha — Software Developer</title>
+    <meta id="site-description" name="description" content="Meet Sukumar Macha, a software developer focused on Python, machine learning and web development.">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="refresh.css">
 </head>
 <body>
+    <div class="intro-overlay" id="intro-overlay" role="dialog" aria-modal="true" aria-labelledby="intro-title" hidden>
+        <div class="intro-card">
+            <div class="intro-visual" aria-hidden="true">
+                <div class="intro-orbit orbit-a"></div><div class="intro-orbit orbit-b"></div>
+                <div class="intro-avatar-wrap"><img class="intro-avatar" src="avatar-sukumar.png" alt=""></div>
+                <span class="intro-status"><i></i> PORTFOLIO INTRO · 00:30</span>
+            </div>
+            <div class="intro-copy">
+                <p class="intro-eyebrow">A QUICK INTRODUCTION</p>
+                <h2 id="intro-title">Hello, I’m<br><span id="intro-name">Sukumar Macha.</span></h2>
+                <p class="intro-caption" id="intro-caption">A developer who enjoys turning ideas into useful things.</p>
+                <div class="intro-progress"><span id="intro-progress-fill"></span></div>
+                <div class="intro-controls">
+                    <button class="intro-start" id="intro-start" type="button">▶ &nbsp; Start introduction</button>
+                    <button class="intro-mute" id="intro-mute" type="button" aria-pressed="false" disabled>🔊 &nbsp; Mute voice</button>
+                    <button class="intro-skip" id="intro-skip" type="button">Skip intro ↗</button>
+                </div>
+                <p class="intro-hint" id="intro-hint">30 seconds · Voice begins when you press start</p>
+            </div>
+        </div>
+    </div>
     <div class="background-animation">
         <div class="gradient-orb orb-1"></div>
         <div class="gradient-orb orb-2"></div>
@@ -16,49 +39,41 @@
 
     <nav>
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a id="nav-home" href="#home">Home</a></li>
+            <li><a id="nav-about" href="#about">About</a></li>
+            <li><a id="nav-skills" href="#skills">Skills</a></li>
+            <li><a id="nav-education" href="#education">Education</a></li>
+            <li><a id="nav-projects" href="#projects">Projects</a></li>
+            <li><a id="nav-contact" href="#contact">Contact</a></li>
         </ul>
     </nav>
 
     <section class="hero" id="home">
         <div class="hero-content">
-            <h1 class="glitch">Sukumar Macha</h1>
-            <p class="subtitle">Python Developer | Problem Solver | Tech Enthusiast</p>
-            <p class="tagline">Building innovative solutions with Python, Web Development & Java</p>
+            <p class="hero-kicker"><span class="availability-dot"></span> <span id="profile-availability">OPEN TO OPPORTUNITIES</span> · <span id="profile-location-short">HYDERABAD, INDIA</span></p>
+            <h1 class="glitch" id="profile-name">Sukumar Macha</h1>
+            <p class="subtitle" id="profile-role">Python Developer | Problem Solver | Tech Enthusiast</p>
+            <p class="tagline" id="profile-tagline">Building innovative solutions with Python, Web Development & Java</p>
             <div class="cta-buttons">
-                <a href="#projects" class="btn btn-primary">View My Work</a>
-                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                <a href="#projects" class="btn btn-primary" id="cta-work">View My Work</a>
+                <a href="#contact" class="btn btn-secondary" id="cta-contact">Get In Touch</a>
             </div>
         </div>
+        <div class="hero-art" aria-hidden="true"><div class="hero-art-ring"></div><img src="avatar-sukumar.png" alt=""></div>
     </section>
 
     <section id="about" class="fade-in">
-        <h2 class="section-title">About Me</h2>
+        <h2 class="section-title" id="title-about">About Me</h2>
         <div class="about-content">
             <div class="about-text">
-                <h3>Hello! I'm a passionate software developer</h3>
-                <p>
-                    Currently pursuing my Bachelor's degree at Trinity College of Engineering and Technology, 
-                    I'm in my final year with a strong academic record of 8.15 CGPA after completing my 3rd year.
-                </p>
-                <p>
-                    I specialize in Python, Web Development, Java, and MySQL, creating efficient and scalable 
-                    solutions. I'm constantly learning and exploring new technologies to stay ahead in this 
-                    ever-evolving field.
-                </p>
-                <p>
-                    My goal is to leverage my technical skills to contribute to innovative projects and make 
-                    a meaningful impact in the tech industry.
-                </p>
+                <h3 id="about-heading">Hello! I'm a passionate software developer</h3>
+                <p id="about-intro">Currently pursuing my Bachelor’s degree at Trinity College of Engineering and Technology, I’m in my final year with a strong academic record.</p>
+                <p id="about-focus">I specialize in Python, Web Development, Java, and MySQL, creating efficient and scalable solutions. I’m constantly learning and exploring new technologies.</p>
+                <p id="about-goal">My goal is to leverage my technical skills to contribute to innovative projects and make a meaningful impact in the tech industry.</p>
             </div>
             <div class="stats">
                 <div class="stat-card">
-                    <div class="number">8.15</div>
+                    <div class="number">8.30</div>
                     <div class="label">CGPA</div>
                 </div>
                 <div class="stat-card">
@@ -78,7 +93,7 @@
     </section>
 
     <section id="skills" class="fade-in">
-        <h2 class="section-title">Technical Skills</h2>
+        <h2 class="section-title" id="title-skills">Technical Skills</h2>
         <div class="skills-container">
             <div class="skill-card">
                 <div class="skill-icon">🐍</div>
@@ -124,29 +139,29 @@
     </section>
 
     <section id="education" class="fade-in">
-        <h2 class="section-title">Education</h2>
+        <h2 class="section-title" id="title-education">Education</h2>
         <div class="education-card">
-            <h3>Bachelor of Engineering</h3>
-            <p class="institution">Trinity College of Engineering and Technology</p>
+            <h3 id="education-degree">Bachelor of Engineering</h3>
+            <p class="institution" id="education-institution">Trinity College of Engineering and Technology</p>
             <div class="education-details">
                 <div class="detail-item">
                     <span class="detail-label">Current Year</span>
-                    <span class="detail-value">4th Year (Final Year)</span>
+                    <span class="detail-value" id="education-year">4th Year (Final Year)</span>
                 </div>
                 <div class="detail-item">
                     <span class="detail-label">Completed</span>
-                    <span class="detail-value">3rd Year</span>
+                    <span class="detail-value" id="education-completed">3rd Year</span>
                 </div>
                 <div class="detail-item">
                     <span class="detail-label">CGPA</span>
-                    <span class="detail-value cgpa">8.15</span>
+                    <span class="detail-value cgpa" id="education-cgpa">8.30</span>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="projects" class="fade-in">
-        <h2 class="section-title">Featured Projects</h2>
+        <h2 class="section-title" id="title-projects">Featured Projects</h2>
         <div class="projects-grid">
             <div class="project-card">
                 <div class="project-image">💻</div>
@@ -172,32 +187,34 @@
                     </div>
                 </div>
             </div>
- 
+        </div>
     </section>
 
     <section id="contact" class="fade-in">
-        <h2 class="section-title">Get In Touch</h2>
+        <h2 class="section-title" id="title-contact">Get In Touch</h2>
         <div class="contact-container">
             <div class="contact-info">
                 <div class="contact-item">
                     <div class="contact-icon">📧</div>
                     <div class="contact-details">
         
-                        <a href="mailto:sukumar9618@gmail.com" style="color: white;">Email</a>
+                        <h4 id="contact-email-label">Email</h4>
+                        <a id="contact-email" href="mailto:sukumar9618@gmail.com"></a>
                     </div>
                 </div>
                 <div class="contact-item">
                     <div class="contact-icon">📱</div>
                     <div class="contact-details">
             
-                        <a href="tel:+919398216531" style="color: white;">Phone</a>
+                        <h4 id="contact-phone-label">Phone</h4>
+                        <a id="contact-phone" href="tel:+919398216531"></a>
                     </div>
                 </div>
                 <div class="contact-item">
                     <div class="contact-icon">📍</div>
                     <div class="contact-details">
-                        <h4>Location</h4>
-                        <p>Hyderabad, Telangana, India</p>
+                        <h4 id="contact-location-label">Location</h4>
+                        <p id="contact-location">Hyderabad, Telangana, India</p>
                     </div>
                 </div>
             </div>
@@ -210,8 +227,10 @@
     </section>
 
     <footer>
-        <p>&copy; 2026 SUKUMAR MACHA.</p>
+        <p id="footer-text">© 2026 SUKUMAR MACHA.</p>
     </footer>
+<script src="portfolio-data.js"></script>
 <script src="script.js"></script>
+<script src="emoji-fix.js"></script>
 </body>
 </html>
